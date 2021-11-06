@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    font-family: "Montserrat", sans-serif;
+}
+
+section{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    /* background-image: url("./images/DiwaliWishesLandscape.jpg"); */
+    /* background-image: url("./images/Diwali-Wishes-Landscape.jpg"); */
+    /* background-image: url("./images/Diwali_Wishes_Landscape.jpg"); */
+    background-image: url("./images/DiwaliWishes-Landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.heading{
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    font-family: 'Bad Script', cursive;
+    top: 10%;
+}
+h2{
+    display: flex;
+    color: transparent;
+    font-size: 50px;
+}
+h2 span{
+    animation: animate 3s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+    letter-spacing: -0.1px;
+}
+@keyframes animate {
+    0%{
+        color: #fff;
+        filter: blur(1px) hue-rotate(0deg);
+        text-shadow: 0 0 5px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff;
+    }
+    30%, 70%{
+        color: #fff;
+        filter: blur(1px) hue-rotate(360deg);
+        text-shadow: 0 0 5px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff;
+    }
+    100%{
+        color: transparent;
+        box-shadow: none;
+        filter: blur(1px) hue-rotate(0deg);
+    }
+}
+
+.wish-text {
+    position: absolute;
+    width: 70%;
+    padding: 15px;
+    margin-top: 15px;
+    color: #1c4ebb;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 3px solid #c2bebe;
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 25%;
+}
+.wish-text:hover {
+    box-shadow: 3px 3px 10px #ccc, 3px 3px 20px rgb(74, 146, 84);
+    transform: translateY(-10px);
+}
+
+.buttons{
+    position: absolute;
+    height: 5%;
+    width: 60%;
+    justify-content: space-evenly;
+    top: 45%;
+}
+.btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    text-transform: capitalize;
+    background-color: rgb(144, 214, 203);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.btn:hover {
+    background-color: rgba(144, 214, 203, 0.8);
+    cursor: pointer;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    position: absolute;
+    padding: 5px;
+    visibility: hidden;
+    width: 140px;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgb(165, 113, 248);
+    left: 50%;
+    margin-left: -75px;
+    bottom: 150%;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(165, 113, 248) transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.sharing_button{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 50%;
+}
+.sharing-button__icon {
+    display: inline-block;
+    fill: #fff;
+    stroke: none;
+}
+.sharing-button__link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0.5em;
+}
+.sharing-button {
+    border-radius: 5px;
+    transition: 25ms ease-out;
+    padding: 0.5em 0.75em;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.sharing-button__icon svg {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.4em;
+    vertical-align: top;
+}
+.sharing-button--small svg {
+    margin: 0;
+    vertical-align: middle;
+}
+.sharing-button--whatsapp {
+    background-color: rgb(37, 211, 102);
+    border-color: rgb(37, 211, 102);
+}
+.sharing-button--whatsapp:hover,
+.sharing-button--whatsapp:active {
+    background-color: rgba(37, 211, 102, 0.8);
+    border-color: rgba(37, 211, 102, 0.8);
+}
+
+.sharing-button--twitter {
+    background-color: rgb(85, 172, 238);
+    border-color: rgb(85, 172, 238);
+}
+.sharing-button--twitter:hover,
+.sharing-button--twitter:active {
+    background-color: rgba(85, 172, 238, 0.8);
+    border-color: rgba(85, 172, 238, 0.8);
+}
+
+.sharing-button--email {
+    background-color: rgb(119, 119, 119);
+    border-color: rgb(119, 119, 119);
+}
+.sharing-button--email:hover,
+.sharing-button--email:active {
+    background-color: rgba(119, 119, 119, 0.8);
+    border-color: rgba(119, 119, 119, 0.8);
+}
+
+.sharing-button--facebook {
+    background-color: rgb(59, 89, 152);
+    border-color: rgb(59, 89, 152);
+}
+.sharing-button--facebook:hover,
+.sharing-button--facebook:active {
+    background-color: rgba(59, 89, 152, 0.8);
+    border-color: rgba(59, 89, 152, 0.8);
+}
+
+.footer{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    border-top: 2px solid white;
+    top: 90%;
+}
+.footer_text {
+    font-size: 1em;
+    color: white;
+    font-weight: 800;
+}
+.lookbook a {
+    color: rgb(0, 255, 76);
+}
+.lookbook a:hover {
+    color: rgba(0, 255, 76, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .heading{
+        top: 10%;
+    }
+
+    .wish-text {
+        top: 25%;
+    }
+
+    .buttons{
+        top: 50%;
+    }
+
+    .sharing_button{
+        top: 60%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .buttons{
+        top: 55%;
+    }
+
+    .sharing_button{
+        top: 70%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .heading{
+        top: 5%;
+    }
+
+    .wish-text {
+        top: 20%;
+    }
+
+    .buttons{
+        width: 100%;
+        top: 50%;
+    }
+
+    .sharing_button{
+        flex-direction: column;
+        top: 65%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .heading{
+        top: 5%;
+    }
+    h2{
+        font-size: 45px;
+    }
+
+    .wish-text {
+        top: 15%;
+    }
+}
+@media screen and (max-width: 550px) {
+    section{
+        /* background-image: url("./images/Diwali-Wishes-Portrait.jpg"); */
+        background-image: url("./images/Diwali_Wishes_Portrait.jpg");
+        /* background-image: url("./images/DiwaliWishesPortrait.jpg"); */
+    }
+    .buttons{
+        top: 55%;
+    }
+
+    .sharing_button{
+        top: 70%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .buttons{
+        top: 59%;
+    }
+
+    .sharing_button{
+        top: 72%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .heading{
+        top: 3%;
+    }
+    h2{
+        font-size: 35px;
+    }
+
+    .wish-text {
+        top: 11%;
+    }
+
+    .buttons{
+        top: 61%;
+    }
+    .btn {
+        font-size: 15px;
+    }
+
+    .sharing_button{
+        top: 73%;
+    }
+    .sharing-button__link {
+        margin: 0.3em;
+    }
+}
+@media screen and (max-width: 360px) {
+    .heading{
+        top: 2%;
+    }
+
+    .wish-text {
+        top: 10%;
+    }
+    .wish-text h3{
+        font-size: 1.1em;
+    }
+
+    .buttons{
+        top: 58%;
+    }
+
+    .sharing_button{
+        top: 70%;
+    }
+    .sharing-button__link {
+        margin: 0.4em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 150px) {
+    .heading{
+        top: 5%;
+    }
+    h2{
+        font-size: 50px;
+    }
+
+    .wish-text {
+        top: 20%;
+    }
+
+    .buttons{
+        height: 5%;
+        width: 60%;
+        justify-content: space-evenly;
+        top: 45%;
+    }
+    .btn {
+        font-size: 16px;
+    }
+
+    .sharing_button{
+        top: 50%;
+    }
+    .sharing-button__icon {
+        display: inline-block;
+    }
+    .sharing-button__link {
+        margin: 0.5em;
+    }
+
+    .footer{
+        top: 90%;
+    }
+} */
+
+
+
+
+
+
+/* @media screen and (max-width: 150px) {
+    .heading{
+        top: 5%;
+    }
+    h2{
+        font-size: 50px;
+    }
+
+    .wish-text {
+        top: 20%;
+    }
+
+    .buttons{
+        height: 5%;
+        width: 60%;
+        justify-content: space-evenly;
+        top: 45%;
+    }
+    .btn {
+        font-size: 16px;
+    }
+
+    .sharing_button{
+        top: 50%;
+    }
+    .sharing-button__icon {
+        display: inline-block;
+    }
+    .sharing-button__link {
+        margin: 0.5em;
+    }
+
+    .footer{
+        top: 90%;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
