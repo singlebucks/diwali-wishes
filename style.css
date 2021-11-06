@@ -230,10 +230,10 @@ h2 span{
 
 .footer{
     position: absolute;
-    height: 10%;
+    height: 6%;
     width: 100%;
     border-top: 2px solid white;
-    top: 90%;
+    top: 94%;
 }
 .footer_text {
     font-size: 1em;
@@ -332,24 +332,6 @@ h2 span{
         background-image: url("./images/Diwali_Wishes_Portrait.jpg");
         /* background-image: url("./images/DiwaliWishesPortrait.jpg"); */
     }
-    .buttons{
-        top: 55%;
-    }
-
-    .sharing_button{
-        top: 70%;
-    }
-}
-@media screen and (max-width: 450px) {
-    .buttons{
-        top: 59%;
-    }
-
-    .sharing_button{
-        top: 72%;
-    }
-}
-@media screen and (max-width: 420px) {
     .heading{
         top: 3%;
     }
@@ -358,18 +340,71 @@ h2 span{
     }
 
     .wish-text {
-        top: 11%;
+        top: 12%;
+    }
+    .wish-text h3{
+        font-size: 1.1em;
+    }
+    .buttons{
+        top: 59%;
+    }
+
+    .sharing_button{
+        top: 75%;
+    }
+    .sharing-button__link {
+        margin: 0.3em;
+    }
+}
+@media screen and (max-width: 450px) {
+    .heading{
+        top: 3%;
+    }
+    h2{
+        font-size: 35px;
+    }
+
+    .wish-text {
+        top: 12%;
+    }
+    .wish-text h3{
+        font-size: 1em;
+    }
+    .buttons{
+        top: 59%;
+    }
+
+    .sharing_button{
+        top: 75%;
+    }
+    .sharing-button__link {
+        margin: 0.3em;
+    }
+}
+@media screen and (max-width: 420px) {
+    .heading{
+        top: 2%;
+    }
+    h2{
+        font-size: 35px;
+    }
+
+    .wish-text {
+        top: 10%;
+    }
+    .wish-text h3{
+        font-size: 1em;
     }
 
     .buttons{
-        top: 61%;
+        top: 60%;
     }
     .btn {
         font-size: 15px;
     }
 
     .sharing_button{
-        top: 73%;
+        top: 75%;
     }
     .sharing-button__link {
         margin: 0.3em;
@@ -377,181 +412,24 @@ h2 span{
 }
 @media screen and (max-width: 360px) {
     .heading{
-        top: 2%;
+        top: 1%;
     }
 
     .wish-text {
-        top: 10%;
+        top: 9%;
     }
     .wish-text h3{
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
 
     .buttons{
-        top: 58%;
+        top: 55%;
     }
 
     .sharing_button{
-        top: 70%;
+        top: 72%;
     }
     .sharing-button__link {
-        margin: 0.4em;
+        margin: 0.3em;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media screen and (max-width: 150px) {
-    .heading{
-        top: 5%;
-    }
-    h2{
-        font-size: 50px;
-    }
-
-    .wish-text {
-        top: 20%;
-    }
-
-    .buttons{
-        height: 5%;
-        width: 60%;
-        justify-content: space-evenly;
-        top: 45%;
-    }
-    .btn {
-        font-size: 16px;
-    }
-
-    .sharing_button{
-        top: 50%;
-    }
-    .sharing-button__icon {
-        display: inline-block;
-    }
-    .sharing-button__link {
-        margin: 0.5em;
-    }
-
-    .footer{
-        top: 90%;
-    }
-} */
-
-
-
-
-
-
-/* @media screen and (max-width: 150px) {
-    .heading{
-        top: 5%;
-    }
-    h2{
-        font-size: 50px;
-    }
-
-    .wish-text {
-        top: 20%;
-    }
-
-    .buttons{
-        height: 5%;
-        width: 60%;
-        justify-content: space-evenly;
-        top: 45%;
-    }
-    .btn {
-        font-size: 16px;
-    }
-
-    .sharing_button{
-        top: 50%;
-    }
-    .sharing-button__icon {
-        display: inline-block;
-    }
-    .sharing-button__link {
-        margin: 0.5em;
-    }
-
-    .footer{
-        top: 90%;
-    }
-} */
-
-
-
-
-
-
-
-
-
-
